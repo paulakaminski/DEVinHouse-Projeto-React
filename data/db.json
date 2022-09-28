@@ -1,0 +1,45 @@
+{
+  "medicamentos": [
+    {
+      "id": "abc",
+      "medicamento": "Paracetamol",
+      "laboratorio": "Cimed",
+      "dosagem": "750mg",
+      "tipo": "Medicamento comum",
+      "preco": "R$ 15,87",
+      "descricao": "INDICAÇÃO: Este medicamento é indicado em adultos para a redução da febre e para o alívio temporário de dores leves a moderadas, tais como: dores associadas a resfriados comuns, dor de cabeça, dor no corpo, dor de dente, dor nas costas, dores musculares, dores leves associadas a artrites e cólicas menstruais. CONTRA INDICAÇÃO: Você não deve usar paracetamol se tiver alergia ao paracetamol ou a qualquer componente da fórmula. Este medicmento é contraindicado para menores de 12 anos."
+    },
+    {
+      "medicamento": "Buscofem",
+      "laboratorio": "Cimed",
+      "dosagem": "400mg",
+      "tipo": "Medicamento comum",
+      "descricao": "O Buscofem é indicado para tratamento dos sintomas de febre e dores leves e moderadas associadas a gripes e resfriados, faringite, cefaleia, enxaqueca, dor de dente, dor nas costas, dores musculares, dores articulares, dores na região pélvica, como cólica.",
+      "preco": "21,99",
+      "id": "v_c6fjr"
+    }
+  ],
+  "filiais": [
+    {
+      "id": "abc",
+      "razaoSocial": "Cia Latino Americana de Medicamentos",
+      "cnpj": "84.683.481/0001-77",
+      "nomeFantasia": "DC Jlle São João",
+      "email": "dcsaojoao@clamed.com.br",
+      "telefone": "",
+      "celular": "47 99209-2586",
+      "cep": "89202-295",
+      "logradouro": "Av. Getulio Vargas",
+      "numero": "939",
+      "bairro": "Bucarein",
+      "localidade": "Joinville",
+      "uf": "SC",
+      "complemento": "",
+      "latitude": "-26.315918",
+      "longitude": "-48.845258"
+    }
+  ],
+  "usuarios": [
+    { "id": "abc", "email": "paula.kaminski@hotmail.com", "senha": "abcd1234" }
+  ]
+}

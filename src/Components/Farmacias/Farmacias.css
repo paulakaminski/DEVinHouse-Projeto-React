@@ -1,0 +1,40 @@
+/* PÁGINA DOS MAPAS */
+
+.container-mapa {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.mapa-content h3 {
+  color: #444;
+}
+
+/* PÁGINA DO FORMULÁRIO */
+
+.container-farmacia {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-farmacia {
+  background: #fff;
+  border: #0d6efd solid 1px;
+  border-radius: 12px;
+  float: left;
+  width: 90%;
+  padding: 1%;
+}
+
+.cadastro-filial h3 {
+  text-align: center;
+}
+
+.cadastro-filial h3 {
+  color: #444;
+}

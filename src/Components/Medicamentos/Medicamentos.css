@@ -1,0 +1,56 @@
+/* PÁGINA DO FORMULÁRIO */
+
+.container-medicamento {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-medicamento {
+  background: #fff;
+  border: #0d6efd solid 1px;
+  border-radius: 12px;
+  float: left;
+  width: 70%;
+  padding: 1%;
+}
+
+.cadastro-medicamento h3 {
+  text-align: center;
+  color: #444;
+}
+
+/* PÁGINA LISTA DE MEDICAMENTOS */
+
+.card {
+  width: 18rem;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.card img {
+  width: 200px;
+  height: 200px;
+  margin-top: 16px;
+}
+
+#lista-medicamentos h3 {
+  text-align: center;
+  color: #444;
+}
+
+#busca-medicamentos {
+  width: 590px;
+  height: 40px;
+  border: 2px solid #0d6efd;
+  border-radius: 5px;
+}
+
+.div-barra-pesquisa {
+  justify-content: center;
+  align-items: center;
+}
