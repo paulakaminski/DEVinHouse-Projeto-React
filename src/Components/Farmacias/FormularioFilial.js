@@ -28,7 +28,11 @@ export default function FormularioFilial() {
 
   //Mostrar os dados do endereço na tela
   useEffect(() => {
-    getAdress();
+    // é necessário fazer uma vadição para não chamar a API sem o CEP, por exemplo
+    if (filial.cep === undefined) return
+    if (filial.cep.length === 8) {
+      getAdress();
+    }
   }, [filial.cep]);
 
   //Buscar os dados de latitude e longitude da API
@@ -52,7 +56,11 @@ export default function FormularioFilial() {
 
   //Mostrar os dados de latitude e longitude na tela
   useEffect(() => {
-    getMapBox();
+    // é necessário fazer uma vadição para não chamar a API sem o logradouro, por exemplo
+    if (filial.logradouro === undefined) return
+    if (filial.logradouro.length > 0) {
+      getMapBox();
+    }
   }, [filial.logradouro]);
 
   //Setar status dos campos para validação
@@ -102,11 +110,13 @@ export default function FormularioFilial() {
         mensagem: "Campo obrigatório!",
       });
 
-      if (!validCnpj.test(filial.cnpj))
-      return setStatus({
-        type: "errorCnpj",
-        mensagem: "Informe um CNPJ válido!",
-      });
+      // essa validação de cnpj não me permitia criar uma nova filial
+      // criar validação de cnpj
+      // if (!validCnpj(filial.cnpj))
+      // return setStatus({
+      //   type: "errorCnpj",
+      //   mensagem: "Informe um CNPJ válido!",
+      // });
 
     if (!filial.nomeFantasia)
       return setStatus({
